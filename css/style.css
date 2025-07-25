@@ -1,0 +1,319 @@
+main{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+nav{
+    background-color: #A5C926;
+    color: white;
+    display: flex;
+    flex: 1 2 1;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 0 100px;
+    margin: 0;
+    position: fixed;
+    z-index: 1000;
+    width: 1440px;
+    opacity: 0.8;
+   
+}
+
+.men{
+    flex-grow: 2;
+}
+
+.men li{
+    display: inline-block;
+    margin-right: 30px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.men li a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.men li:hover{
+    box-shadow: 0 0 5px white;
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+header{
+    width: 100%;
+    height: 640px;
+    background-image: url(../img/header.jpg);
+    margin: 0;
+    padding-top: 166px;
+    box-sizing: border-box;
+}
+
+.off{
+    background-color: white;
+    width: 570px;
+    height: 308px;
+    border-radius: 16px ;
+    text-align: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.off p{
+    color: #A5C926;
+}
+
+.off button{
+    padding: 12px 28px;
+    border-radius: 24px;
+    background-color: #A5C926;
+    color: white;
+    border: 0;
+}
+
+.off button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px #A5C926;
+}
+
+#cat{
+    width: 100%;
+    height: 460px;
+    padding: 120px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ye{
+    background-color: #FFC12C;
+    width: 570px;
+    height: 188px;
+   border-radius: 16px;
+}
+
+.ye-img{
+    float: left;
+    position: relative;
+    bottom: 50px;
+}
+
+.ye-tex{
+    padding-top: 45px;
+    color: white;
+    padding-left: 250px;
+    
+}
+
+.ye-tex button{
+    padding: 8 24px;
+    border-radius: 20px;
+    border: none;
+    padding: 8px;
+    
+}
+
+.ye-tex button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
+
+.pi{
+background-color: #FB416B;
+width: 570px;
+height: 180px;
+border-radius: 16px;
+color: white;
+padding-left: 15px;
+}
+
+.pi-png{
+float: right;
+position: relative;
+bottom: 170px;
+}
+
+.pi-tex{
+padding-top: 30px;
+padding-left: 180px;
+}
+
+.pi button{
+    margin-left: 60px;
+    padding: 8 24px;
+    border-radius: 20px;
+    border: none;
+    padding: 8px;
+}
+
+.pi-tex button:hover{
+cursor: pointer;
+box-shadow: 0 0 3px white;
+}
+
+#a-us{
+    width: 100%;
+    height: 465px;
+    background-image: url(../img/ourstori.jpg);
+    margin: 0;
+    padding-top: 120px;
+    box-sizing: border-box;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+#a-us .text{
+    width: 800px;
+    height: 230px;
+    background-color: rgb(255, 255, 255, 0.8);
+    margin: 0 auto;
+    text-align: center;
+    color: #A5C926;
+}
+
+#a-us .text button{
+    background-color: #A5C926;
+    color: white;
+    text-align: center;
+    padding: 23px;
+    border: 0;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+
+#add{
+    width: 1200px;
+    height: 630px;
+    margin: 120px auto;
+}
+
+#add h2{
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cards .text p{
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.hr {
+    width: 70px;
+    color: #A5C926;
+    border: 1px solid #A5C926;
+    margin: 20px 0;
+
+}
+
+.cards button{
+    background-color: #A5C926;
+    color: white;
+    border: 0;
+    padding: 12px 28px;
+    border-radius: 24px;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+}
+
+.item{
+    margin: 30px;
+    padding: 30px 40px;
+    box-shadow: 0px 1px 2px rgb(0,0,0,0.3);
+    border-radius: 16px;
+    text-align: center;
+}
+
+.item button{
+    background-color: #A5C926;
+    color: white;
+    text-align: center;
+    padding: 13px;
+    border: 0;
+    font-size: 12px;
+    box-sizing: border-box;
+    border-radius: 24px;
+}
+
+@media all and (max-width: 820px) {
+    main{
+        width: 820px;
+    }
+    .off{
+       width: 50%;
+    }
+
+    #cat{
+        padding: 40px 20px;
+    }
+
+    .pi-tex{
+        padding-left: 20px;
+    }
+
+    .items{
+        flex-wrap: wrap;
+    }
+    #cat{
+        padding: 0;
+        align-items: center;
+    }
+    .ye, .pi{
+        width: 48%;
+    }
+    
+#a-us .text{
+   width: 80%;
+ 
+   
+}
+
+#add{
+
+    width: 90%;
+}
+
+.cards{
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.cards .text p{
+    margin: 10px auto;
+}
+
+hr{
+    margin: 20px auto;
+}
+
+#cat-woo h2, #cat-st h2{
+    text-align: center;
+}
+}
+
+@media all and (max-width: 460px) {
+    main{
+        width: 460px;
+    }
+
+    #cat{
+        display: none;
+    }
+}
